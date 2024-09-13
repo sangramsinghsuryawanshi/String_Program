@@ -10,21 +10,21 @@ public class ReturnNonRepeatingChar
 {
 	public static int is()
 	{
-		String str="jjaajjaaajj"
+		String str="leetcode"
 				+ "";
 		char ch[]=str.toCharArray();
 		int cnt=-1;
 		for(int i=0;i<ch.length;i++)
 		{
 			int c=0;
-			for(int j=0;j<ch.length;j++)
+			for(int j=i+1;j<ch.length;j++)
 			{
 				if(ch[i]==ch[j])
 				{
 					c++;
 				}
 			}
-			if(c==1)
+			if(c==0)
 			{
 				cnt=i;
 				break;
